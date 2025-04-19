@@ -1,0 +1,16 @@
+
+import { ReactNode } from "react";
+import { cn } from "@/lib/utils";
+
+interface CardHoverProps {
+  children: ReactNode;
+  className?: string;
+}
+
+export function CardHover({ children, className }: CardHoverProps) {
+  return (
+    <div className={cn("card-hover", className)}>
+      {children}
+    </div>
+  );
+}
